@@ -1,0 +1,24 @@
+@mixin sectionDesktop {
+	position: relative;
+
+	width: unset;
+	max-width: unset;
+	margin: unset;
+	display: grid;
+	align-items: center;
+	grid-template-columns:
+		minmax(1rem, 1fr)
+		minmax(0, 600px)
+		minmax(0, 600px)
+		minmax(1rem, 1fr);
+}
+
+@mixin sectionImagesDesktop($Img) {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-image: url($Img);
+
+	background-repeat: no-repeat;
+	background-size: cover;
+}
